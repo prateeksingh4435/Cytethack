@@ -4,6 +4,7 @@ cd Process
 
 # Create virtual environment
 python -m venv venv
+
 venv/bin/activate   # On Windows: venv\Scripts\activate
 
 # Install dependencies
@@ -18,8 +19,9 @@ python manage.py runserver
 
 
 # To build EXE
-python Process/agent.py
+
 pip install pyinstaller
+
 pyinstaller --onefile agent.py
 
 
