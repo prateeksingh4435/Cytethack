@@ -1,9 +1,9 @@
 git clone https://github.com/prateeksingh4435/Cytethack.git
-cd Cytethack/Process
+cd Process
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+venv/bin/activate   # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -17,6 +17,7 @@ python manage.py runserver
 
 
 # To build EXE
+python Process/agent.py
 pip install pyinstaller
 pyinstaller --onefile agent.py
 
